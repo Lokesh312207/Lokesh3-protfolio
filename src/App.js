@@ -211,8 +211,8 @@ function Contact() {
             <div className="text-center text-gray-700 dark:text-gray-300">
                 <p>Email: <a href="mailto:lokeshsomapalli@gmail.com" className="text-blue-500">Gmail</a></p>
                 <p>Phone: +91 98765 43210</p>
-                <p>LinkedIn: <a href="https://linkedin.com/in/lokeshkumar" target="_blank" rel="noreferrer" className="text-blue-500">Linkedin</a></p>
-                <p>GitHub: <a href="https://github.com/Lokesh312207/" target="_blank" rel="noreferrer" className="text-blue-500">Github</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/lokesh-somapalli-b529b42ab/" target="_blank" rel="noreferrer" className="text-blue-500">Linkedin</a></p>
+                <p>GitHub: <a href="https://github.com/Lokesh312207" target="_blank" rel="noreferrer" className="text-blue-500">Github</a></p>
             </div>
         </section>
     );
