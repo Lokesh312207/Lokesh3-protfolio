@@ -3,8 +3,8 @@
 Welcome to my personal developer portfolio website built using **React.js**.  
 This site showcases my skills, projects, and contact information in a modern, responsive layout.
 
-🌐 **Live Demo**: [https://lokeshsomapalli.github.io/portfolio](https://lokeshsomapalli.github.io/portfolio)  
-📁 **Repository**: [GitHub Repo](https://github.com/lokeshsomapalli/portfolio)
+🌐 **Live Demo**:[https://lokesh312207.github.io/Lokesh3-protfolio](https://lokesh312207.github.io/Lokesh3-protfolio)  
+📁 **Repository**:[GitHub Repo](https://github.com/lokesh312207/Lokesh3-protfolio)
 
 ---
 
