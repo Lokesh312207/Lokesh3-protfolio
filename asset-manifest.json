@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Lokesh3-protfolio/static/css/main.36d02eb8.css",
-    "main.js": "/Lokesh3-protfolio/static/js/main.42dfa806.js",
+    "main.css": "/Lokesh3-protfolio/static/css/main.972d957c.css",
+    "main.js": "/Lokesh3-protfolio/static/js/main.ee7b71c3.js",
     "index.html": "/Lokesh3-protfolio/index.html",
-    "main.36d02eb8.css.map": "/Lokesh3-protfolio/static/css/main.36d02eb8.css.map",
-    "main.42dfa806.js.map": "/Lokesh3-protfolio/static/js/main.42dfa806.js.map"
+    "main.972d957c.css.map": "/Lokesh3-protfolio/static/css/main.972d957c.css.map",
+    "main.ee7b71c3.js.map": "/Lokesh3-protfolio/static/js/main.ee7b71c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.36d02eb8.css",
-    "static/js/main.42dfa806.js"
+    "static/css/main.972d957c.css",
+    "static/js/main.ee7b71c3.js"
   ]
 }
