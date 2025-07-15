@@ -1,11 +1,12 @@
-/* App.css - Enhanced Responsive Styling */
+/* App.css - Custom Responsive Styling for Portfolio */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f7fa;
     color: #1f1f1f;
@@ -32,6 +33,7 @@ h3 {
 h1 {
     font-size: 3rem;
     font-weight: 700;
+    text-align: center;
 }
 
 h2 {
@@ -40,6 +42,7 @@ h2 {
     border-bottom: 3px solid #3498db;
     display: inline-block;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 p {
@@ -47,10 +50,7 @@ p {
     margin-bottom: 1rem;
 }
 
-ul {
-    padding-left: 20px;
-}
-
+/* Profile Image */
 img.profile-pic {
     display: block;
     width: 160px;
@@ -65,7 +65,6 @@ img.profile-pic {
 img.profile-pic:hover {
     transform: scale(1.05);
 }
-
 
 /* Navbar */
 nav {
@@ -109,28 +108,26 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero / Home Section */
-section#home {
+.toggle-btn {
+    background-color: white;
+    color: #1e40af;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle-btn:hover {
+    background-color: #e2e8f0;
+}
+
+/* Home Section */
+#home {
     text-align: center;
     padding-top: 120px;
 }
 
-/* Profile Image */
-img.profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-img.profile-pic:hover {
-    transform: scale(1.05);
-}
-
-/* Skill Tags */
+/* Skills */
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -175,15 +172,45 @@ img.profile-pic:hover {
     margin-top: 0;
 }
 
-/* Links */
-a {
-    color: #3498db;
-    transition: color 0.3s ease;
+/* Education Timeline */
+.timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 30px;
+    border-left: 4px solid #3b82f6;
 }
 
-a:hover {
-    color: #21618c;
+.timeline-entry {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -14px;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    background: #3b82f6;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+/* Contact Section */
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
     text-decoration: underline;
+    color: #21618c;
 }
 
 /* Footer */
@@ -194,6 +221,17 @@ footer {
     padding: 25px;
     font-size: 0.95rem;
     margin-top: 60px;
+}
+
+/* Dark/Light Mode */
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
 }
 
 /* Responsive Styles */
@@ -248,71 +286,4 @@ footer {
     .project-card {
         padding: 16px;
     }
-}
-
-/* Education.css */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 1.25rem;
-    top: 0;
-    bottom: 0;
-    width: 4px;
-    background: #3b82f6;
-    /* blue-500 */
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -14px;
-    width: 24px;
-    height: 24px;
-    background: #3b82f6;
-    border-radius: 9999px;
-    border: 4px solid white;
-    top: 4px;
-}
-
-/* Add this in App.css or index.css */
-
-.light-mode {
-    background-color: white;
-    color: black;
-}
-
-.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-/* You can customize the navbar styles too */
-.navbar {
-    /* background-color: #1e40af;  */
-    color: white;
-
-    background-color: #3498db;
-    padding: 15px 30px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.3s ease;
-}
-
-
-.toggle-btn {
-    background-color: white;
-    color: #1e40af;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.toggle-btn:hover {
-    background-color: #e2e8f0;
-    /* gray-200 */
 }
