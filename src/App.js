@@ -74,21 +74,22 @@ function Education() {
     const educationList = [
         {
             degree: "B.Tech in Computer Science",
-            institution: "XYZ University",
-            year: "2021 - 2025",
-            score: "CGPA: 8.5",
+            institution: "Sri venkateswara clg of engineering and technology",
+            year: "2022 - 2026",
+            score: "CGPA: 7.5",
         },
         {
             degree: "Intermediate (MPC)",
-            institution: "ABC Junior College",
-            year: "2019 - 2021",
-            score: "Percentage: 92%",
+            institution: "Narayana Junior College",
+            year: "2020 - 2022",
+            score: "Percentage: 73%",
+
         },
         {
             degree: "Secondary School (10th Class)",
-            institution: "DEF High School",
-            year: "2018 - 2019",
-            score: "GPA: 9.7",
+            institution: "Sri chaithanya em High School",
+            year: "2018 - 2020",
+            score: "GPA: 98%",
         },
     ];
 
@@ -114,7 +115,7 @@ function Education() {
 
 
 function Skills() {
-    const skills = ["HTML", "CSS", "JavaScript", "React.js", "Tailwind CSS", "Git", "GitHub"];
+    const skills = ["HTML", "CSS", "JavaScript", "React.js", "Git", "GitHub"];
 
     return (
         <section id="skills" className="py-16 px-6 bg-white dark:bg-gray-800">
