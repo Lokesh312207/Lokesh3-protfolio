@@ -75,7 +75,6 @@ nav {
     width: 100%;
     z-index: 1000;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     transition: background-color 0.3s ease;
@@ -87,23 +86,20 @@ nav h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style: none;
+.nav-links {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
-nav ul li a {
+.nav-links li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: #e0f0ff;
     text-decoration: underline;
 }
@@ -121,10 +117,51 @@ nav ul li a:hover {
     background-color: #e2e8f0;
 }
 
-/* Home Section */
-#home {
+/* Hamburger Icon */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Responsive Mobile Navbar */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #3498db;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 20px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
+
+/* Fix Section Overlap */
+section {
+    scroll-margin-top: 70px;
+}
+
+section#home {
     text-align: center;
-    padding-top: 120px;
+    padding-top: 100px;
+    margin-top: 70px;
 }
 
 /* Skills */
@@ -232,58 +269,4 @@ footer {
 .dark-mode {
     background-color: #121212;
     color: white;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        margin-top: 10px;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-    }
-
-    .project-card {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    nav {
-        padding: 10px 20px;
-    }
-
-    .profile-pic {
-        width: 120px;
-        height: 120px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    .skill-list li {
-        font-size: 0.85rem;
-    }
-
-    .project-card {
-        padding: 16px;
-    }
 }

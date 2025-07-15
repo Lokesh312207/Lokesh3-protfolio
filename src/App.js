@@ -3,33 +3,38 @@ import React, { useState } from "react";
 <img src="/assets/profile.jpg" alt="Lokesh Kumar" className="rounded-full w-40 h-40 mb-6 mt-20" />
 
 
-
-// Navbar Component
 function Navbar({ darkMode, setDarkMode }) {
+    const [menuOpen, setMenuOpen] = React.useState(false);
+
+    const handleLinkClick = () => {
+        setMenuOpen(false); // Auto-close on link click
+    };
+
     return (
-        <nav className="bg-blue-600 text-white px-6 py-4 fixed w-full z-50">
-            <div className="flex justify-between items-center">
-                <h1 className="text-xl font-bold">Lokesh Kumar</h1>
-                <ul className="flex gap-6">
-                    <li><a href="#home" className="hover:text-gray-300">Home</a></li>
-                    <li><a href="#about" className="hover:text-gray-300">About</a></li>
-                    <li><a href="#education" className="hover:text-gray-300">Education</a></li>
-                    <li><a href="#skills" className="hover:text-gray-300">Skills</a></li>
-                    <li><a href="#projects" className="hover:text-gray-300">Projects</a></li>
-                    <li><a href="#contact" className="hover:text-gray-300">Contact</a></li>
-                    <li>
-                        <button
-                            onClick={() => setDarkMode(!darkMode)}
-                            className="toggle-btn"
-                        >
-                            {darkMode ? "☀️ Light" : "🌙 Dark"}
-                        </button>
-                    </li>
-                </ul>
+        <nav>
+            <h1>Lokesh Kumar</h1>
+            <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
+            <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+                <li><a href="#home" onClick={handleLinkClick}>Home</a></li>
+                <li><a href="#about" onClick={handleLinkClick}>About</a></li>
+                <li><a href="#education" onClick={handleLinkClick}>Education</a></li>
+                <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
+                <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
+                <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
+                <li>
+                    <button onClick={() => setDarkMode(!darkMode)} className="toggle-btn">
+                        {darkMode ? "☀️ Light" : "🌙 Dark"}
+                    </button>
+                </li>
+            </ul>
         </nav>
     );
 }
+
 
 // Footer Component
 function Footer() {
